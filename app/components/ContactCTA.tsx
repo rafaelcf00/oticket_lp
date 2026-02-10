@@ -14,23 +14,23 @@ export default function ContactCTA({ imgSrc = "/images/BANNER%20FULL.png" }: { i
           viewport={viewportOnce}
           variants={fadeInUp}
         >
-          <h3 className="text-3xl md:text-4xl text-emerald-900 mb-6">OTICKET ENTREGA PRESENÇA, PROXIMIDADE E PARCERIA REAL.</h3>
+          <h3 className="text-3xl md:text-4xl text-[#023324] font-bold mb-6">OTICKET ENTREGA PRESENÇA, PROXIMIDADE E PARCERIA REAL.</h3>
 
-          <ul className="space-y-4 text-emerald-900/90 list-none">
+          <ul className="space-y-4 text-[#023324]/90 list-none">
             <li className="flex items-start gap-3">
-              <span className="mt-1 text-emerald-900">•</span>
-              <span>Time comercial presente e acessível</span>
+              <span className="mt-1 text-[#023324]">•</span>
+              <span className="text-[#023324]/90">Time comercial presente e acessível</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="mt-1 text-emerald-900">•</span>
+              <span className="mt-1 text-[#023324]">•</span>
               <span>Operação alinhada do planejamento à execução</span>
             </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1 text-emerald-900">•</span>
+            <li className="flex items-start ">
+              <Image src="/images/otti_black.png" alt="plus" width={80} height={80} className="object-cover z-[9999] border border-red-900" />
               <span>Suporte técnico dedicado e especializado</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="mt-1 text-emerald-900">•</span>
+              <span className="mt-1 text-[#023324]">•</span>
               <span>Parceria real no pré, durante e pós-evento</span>
             </li>
           </ul>

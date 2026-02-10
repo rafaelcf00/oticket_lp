@@ -33,13 +33,13 @@ export default function Home() {
       <Strategic />
       <WhyChoose />
       <Products />
-      <div className="bg-white h-[300px]">
+      {/* <div className="bg-white h-[300px]">
           aa
-      </div>
+      </div> */}
       <Directors />
       <OpsTeam />
-      <ContactCTA />
-      <FooterContact />
+      {/* <ContactCTA /> */}
+      {/* <FooterContact /> */}
     </>
   );
 }
