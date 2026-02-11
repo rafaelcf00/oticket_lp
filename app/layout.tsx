@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${mulish.variable} antialiased`}>
+      <body className={`${mulish.variable} antialiased overflow-x-hidden`}>
         {children}
       </body>
     </html>

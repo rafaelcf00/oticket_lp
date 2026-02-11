@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainerFast, viewportOnce } from "../utils/animations";
+import Button from "./Button";
 
 const products = [
   { title: "TICKETS", desc: "O ingresso OTicket garante acesso seguro ao evento, sendo a base do controle.", img: "/images/produtos/tickets.png" },
@@ -14,10 +15,10 @@ const products = [
 
 export default function Products() {
   return (
-    <section className="py-20 bg-[#023324] text-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="produtos" className="py-12 md:py-20 bg-[#023324] text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.h2
-          className="text-3xl md:text-5xl text-center mb-16"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-10 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
@@ -42,7 +43,7 @@ export default function Products() {
               transition={{ type: "spring", stiffness: 300, damping: 24 }}
             >
               {/* Área da imagem: bem alta (min-h) + proporção, imagem preenche tudo (object-cover) */}
-              <div className="relative w-full aspect-4/3 min-h-[260px] sm:min-h-[280px] md:min-h-[300px] lg:min-h-[250px] shrink-0 rounded-xl overflow-hidden bg-white/5">
+              <div className="relative w-full aspect-4/3 min-h-[200px] sm:min-h-[260px] md:min-h-[280px] lg:min-h-[250px] shrink-0 rounded-xl overflow-hidden bg-white/5">
                 <Image
                   src={p.img}
                   alt={p.title}
@@ -65,14 +66,9 @@ export default function Products() {
           viewport={viewportOnce}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <motion.a
-            href="#"
-            className="inline-block bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#023324] transition-colors"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.98 }}
-          >
+          <Button href="#contato" variant="dark" size="md">
             QUERO OS PRODUTOS NO MEU EVENTO
-          </motion.a>
+          </Button>
         </motion.div>
       </div>
     </section>
