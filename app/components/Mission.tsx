@@ -110,7 +110,7 @@ export default function Mission() {
           <div className="mx-4 sm:mx-6 md:mx-8 md:ml-16 lg:ml-24 bg-[#023324] rounded-2xl md:rounded-l-3xl md:rounded-tr-3xl p-4 sm:p-6 md:p-8 min-h-[220px] sm:min-h-[260px] md:min-h-[400px] flex items-center justify-center">
             <div className="relative w-full max-w-[220px] sm:max-w-[280px] md:max-w-[380px] lg:max-w-[420px] rounded-2xl overflow-hidden shadow-xl mx-auto md:mx-0">
               <Image
-                src="/images/RECEPÇÃO .jpeg"
+                src="/images/RECEPÇÃO.png"
                 alt="Recepção OTicket"
                 width={420}
                 height={420}
