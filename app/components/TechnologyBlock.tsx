@@ -35,7 +35,7 @@ export default function TechnologyBlock() {
           </p>
         </div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         className="h-[280px] sm:h-[360px] md:h-[420px] lg:h-[500px] relative overflow-hidden"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -49,7 +49,7 @@ export default function TechnologyBlock() {
           width={1920}
           height={1080}
         />
-      </motion.div>
+      </motion.div> */}
     </>
   );
 }
