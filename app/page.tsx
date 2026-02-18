@@ -14,6 +14,7 @@ import FooterContact from "./components/FooterContact";
 import Scrolling from "./components/Scrolling";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import TechnologyBlock from "./components/TechnologyBlock";
 // import TechnologyBlock from "./components/TechnologyBlock";
 
 export default function Home() {
@@ -50,7 +51,8 @@ export default function Home() {
       <Scrolling />
 
       <Products />
-      {/* <TechnologyBlock /> */}
+    
+      <TechnologyBlock />
       <Directors />
       <OpsTeam />
       <ContactCTA />

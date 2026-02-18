@@ -2,74 +2,221 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainerFast, viewportOnce } from "../utils/animations";
+import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, viewportOnce } from "../utils/animations";
 import Button from "./Button";
-
-const products = [
-  { title: "TICKETS", desc: "O ingresso OTicket garante acesso seguro ao evento, sendo a base do controle.", img: "/images/produtos/tickets.png" },
-  { title: "MÁQUINAS", desc: "Máquinas próprias de vendas garantem agilidade e eficiência.", img: "/images/produtos/maquinas.png" },
-  { title: "CASHLESS", desc: "Sistema cashless com caixas fixos e móveis impulsiona a faturação do evento.", img: "/images/produtos/cashless.png" },
-  { title: "PULSEIRAS", desc: "A pulseira OTicket conecta o público ao evento com rapidez e segurança.", img: "/images/produtos/pulseiras.png" },
-  { title: "TOTEM", desc: "O totem OTicket agiliza e organiza a experiência do público com operação simples e intuitiva.", img: "/images/produtos/totem.png" },
-];
 
 export default function Products() {
   return (
-    <section id="produtos" className="py-12 md:py-20 bg-[#023324] text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section
+      id="produtos"
+      className="py-12 md:py-20 bg-[#023324] text-white overflow-hidden"
+    >
+      <div className="mx-64 px-4 sm:px-6">
+
+        {/* TÍTULO */}
         <motion.h2
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-10 md:mb-16"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
-          transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+          transition={{ duration: 0.5 }}
         >
-          PRODUTOS OTICKET
+          PRODUTOS
         </motion.h2>
 
+        <div className="w-[200px] h-0.5 bg-white/90 mt-2" />
+
+        {/* BLOCO 1 */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 md:gap-6 items-stretch"
+          className="mt-12 flex gap-x-44 items-center"
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          variants={staggerContainerFast}
+          variants={staggerContainer}
         >
-          {products.map((p, i) => (
-            <motion.div
-              key={i}
-              variants={fadeInUp}
-              className="rounded-2xl border-2 border-white/90 p-4 md:p-5 bg-white/5 flex flex-col min-h-0"
-              whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              transition={{ type: "spring", stiffness: 300, damping: 24 }}
-            >
-              {/* Área da imagem: bem alta (min-h) + proporção, imagem preenche tudo (object-cover) */}
-              <div className="relative w-full aspect-4/3 min-h-[200px] sm:min-h-[260px] md:min-h-[280px] lg:min-h-[250px] shrink-0 rounded-xl overflow-hidden bg-white/5">
-                <Image
-                  src={p.img}
-                  alt={p.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
-                  className="object-cover"
-                />
-              </div>
 
-              <h3 className="mt-4 md:mt-5 text-base md:text-lg font-bold tracking-wide uppercase">{p.title}</h3>
-              <p className="mt-2 text-sm text-white/90 leading-relaxed">{p.desc}</p>
+          {/* TEXTO */}
+          <motion.div variants={fadeInLeft} className="flex flex-col gap-y-5 w-full">
+            <div>
+              <h1 className="text-white text-4xl font-bold mb-3">
+                GESTÃO DE BAR 360°
+              </h1>
+
+              <motion.div
+                className="bg-[#055440] p-6 text-center"
+                variants={fadeInUp}
+              >
+                <p className="text-white text-xl">
+                  TICKETS PRODUTOS PRESENCIAL
+                </p>
+                <p className="text-white text-2xl font-bold">
+                  CAIXAS MÓVEIS E FIXOS
+                </p>
+              </motion.div>
+            </div>
+
+            <motion.div variants={fadeInUp} className="bg-[#055440] p-6 text-center">
+              <p className="text-white text-xl">
+                CASHLESS PRODUTOS
+              </p>
+              <p className="text-white text-2xl font-bold">
+                CAIXAS MÓVEIS E FIXOS
+              </p>
             </motion.div>
-          ))}
+          </motion.div>
+
+          {/* IMAGEM COM LOGO FUNDO */}
+          <motion.div
+            variants={fadeInRight}
+            className="relative w-[600px] h-[500px] overflow-visible"
+          >
+
+            {/* Logo fundo */}
+            <Image
+              src="/images/logo_icon.png"
+              alt=""
+              fill
+              className="object-contain opacity-[0.06] scale-[5]"
+              aria-hidden
+            />
+
+            {/* Produto */}
+            <Image
+              src="/images/produtos/maquinas.png"
+              alt="Máquinas"
+              fill
+              className="object-contain z-10 scale-[3]"
+            />
+
+            <Image
+              src="/images/produtos/cashless.png"
+              alt="Bar"
+              fill
+              className="object-contain z-0 scale-[2.2]  -mt-28  rotate-420 -ml-52"
+            />
+
+          </motion.div>
         </motion.div>
 
+        {/* BLOCO 2 */}
         <motion.div
-          className="mt-12 flex justify-center"
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          className="mt-24 flex gap-x-24 items-center"
+          initial="hidden"
+          whileInView="visible"
           viewport={viewportOnce}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          variants={staggerContainer}
         >
-          <Button href="#contato" variant="dark" size="md">
-            QUERO OS PRODUTOS NO MEU EVENTO
-          </Button>
+
+          {/* IMAGEM COM LOGO FUNDO */}
+          <motion.div
+            variants={fadeInLeft}
+            className="relative w-[600px] h-[500px] overflow-visible"
+          >
+
+            <Image
+              src="/images/logo_icon.png"
+              alt=""
+              fill
+              className="object-contain opacity-[0.06] scale-[5]"
+              aria-hidden
+            />
+
+            <Image
+              src="/images/produtos/maquinas.png"
+              alt="Bar"
+              fill
+              className="object-contain z-10 scale-[3]"
+            />
+
+            <Image
+              src="/images/produtos/tickets.png"
+              alt="Bar"
+              fill
+              className="object-contain z-0 scale-[1] -rotate-28 -ml-52"
+            />
+
+          </motion.div>
+
+          {/* TEXTO */}
+          <motion.div variants={fadeInRight} className="flex flex-col gap-y-5 w-full">
+            <div>
+              <h1 className="text-white text-2xl mb-3">
+                TICKETS PRESENCIAL
+              </h1>
+
+              <h1 className="text-white text-4xl font-bold mb-3">
+                PONTO DE VENDA E APP
+              </h1>
+
+              <motion.div variants={fadeInUp} className="bg-[#055440] p-6 text-center">
+                <p className="text-white text-xl">
+                  VALIDAÇÃO DE INGRESSOS: CONTROLE DE ACESSO VIA APP OU CATRACA
+                </p>
+              </motion.div>
+            </div>
+          </motion.div>
         </motion.div>
+
+        {/* BLOCO 3 */}
+        <motion.div
+          className="flex gap-x-44 items-center mt-24 mb-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          variants={staggerContainer}
+        >
+
+          {/* TEXTO */}
+          <motion.div variants={fadeInLeft} className="flex flex-col gap-y-5 w-full">
+            <div>
+              <motion.h1
+                variants={fadeInUp}
+                className="text-white text-right text-3xl font-bold mb-3"
+              >
+                + SOLUÇÕES
+              </motion.h1>
+
+              <motion.p
+                variants={fadeInUp}
+                className="text-white text-7xl font-bold mb-3 text-right"
+              >
+                PULSEIRAS
+              </motion.p>
+
+              <motion.p
+                variants={fadeInUp}
+                className="text-white text-right text-2xl font-bold mb-3"
+              >
+                TYVEK E TECIDO
+              </motion.p>
+
+              {/* BOTÃO */}
+              <motion.div
+                variants={fadeInUp}
+                className="flex justify-end mt-6"
+              >
+                <Button href="#contato" variant="dark" size="md">
+                  QUERO OS PRODUTOS NO MEU EVENTO
+                </Button>
+              </motion.div>
+            </div>
+          </motion.div>
+
+          {/* IMAGEM COM LOGO FUNDO */}
+          <motion.div
+            variants={fadeInRight}
+            className="relative w-[700px] h-[350px] overflow-visible"
+          >
+            <Image
+              src="/images/produtos/produto3.webp"
+              alt="Pulseiras"
+              fill
+              className="object-cover rounded-3xl z-10 scale-[1.4]"
+            />
+          </motion.div>
+        </motion.div>
+
+
       </div>
     </section>
   );

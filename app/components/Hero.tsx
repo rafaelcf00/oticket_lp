@@ -66,9 +66,9 @@ export default function HeroPage() {
             smooth
             duration={400}
             offset={0}
-            className="inline-block rounded-full font-semibold transition-colors bg-[#023324] text-white hover:bg-[#034a38] shadow-lg shadow-[#023324]/25 px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#023324]/50 hover:scale-105 active:scale-95"
+            className="inline-block rounded-full uppercase font-semibold transition-colors bg-[#023324] text-white hover:bg-[#034a38] shadow-lg shadow-[#023324]/25 px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#023324]/50 hover:scale-105 active:scale-95"
           >
-            Fale com um comercial
+            Fale com nosso time
           </ScrollLink>
         </div>
 
@@ -128,7 +128,7 @@ export default function HeroPage() {
                     className="block py-3 px-4 rounded-xl bg-[#023324] text-white text-center font-semibold hover:bg-[#034a38] transition-colors"
                     onClick={closeMenu}
                   >
-                    Fale com um comercial
+                    Fale com nosso time
                   </ScrollLink>
                 </li>
               </ul>

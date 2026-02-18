@@ -48,13 +48,9 @@ export default function FooterContact() {
           <h4 className="font-bold text-xl sm:text-2xl mb-4">
             FAÇA O DOWNLOAD DO NOSSO APLICATIVO!
           </h4>
-          <div className="flex flex-wrap gap-3 md:gap-4">
-            <motion.a href="#" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Image src="/images/appstore.png" alt="App Store" width={120} height={40} className="h-10 w-auto" />
-            </motion.a>
-            <motion.a href="#" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Image src="/images/googleplay.png" alt="Google Play" width={120} height={40} className="h-10 w-auto" />
-            </motion.a>
+          <div className="flex flex-wrap  gap-x-4  ">
+              <Image src="/images/APPLESTORE.png" alt="App Store" width={200} height={200} className="w-1/4  " />
+              <Image src="/images/GOOGLEPLAY.png" alt="App Store" width={200} height={200} className="w-1/4  " />
           </div>
         </motion.div>
 

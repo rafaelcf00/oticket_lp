@@ -19,7 +19,7 @@ export default function WhyChoose() {
             </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.h2
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#023324] font-bold text-center mb-4 md:mb-6 px-2"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl text-[#023324] font-bold text-center mb-4 md:mb-6 px-2"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}

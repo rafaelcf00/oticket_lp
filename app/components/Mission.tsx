@@ -90,10 +90,9 @@ export default function Mission() {
           </motion.div>
         </motion.div>
 
-        {/* Coluna direita: fundo #023324 + imagem RECEPÇÃO */}
         <motion.div
           variants={fadeInUp}
-          className="relative bg-[#023324] w-full h-full min-h-[280px] md:min-h-[360px] flex items-center justify-center py-8 md:py-0"
+          className="relative bg-[#023324] w-full h-full "
         >
           {/* <div className="absolute left-0 top-8 -translate-x-1/2 flex flex-col items-center gap-12 z-10">
             <div className="w-10 h-10 bg-white rounded-full border-2 border-[#023324] flex items-center justify-center">
@@ -107,10 +106,20 @@ export default function Mission() {
             </div>
           </div> */}
 
-          <div className="mx-4 sm:mx-6 md:mx-8 md:ml-16 lg:ml-24 bg-[#023324] rounded-2xl md:rounded-l-3xl md:rounded-tr-3xl p-4 sm:p-6 md:p-8 min-h-[220px] sm:min-h-[260px] md:min-h-[400px] flex items-center justify-center">
-            <div className="relative w-full max-w-[220px] sm:max-w-[280px] md:max-w-[380px] lg:max-w-[420px] rounded-2xl overflow-hidden shadow-xl mx-auto md:mx-0">
+          <div className="flex w-full h-full  mx-16">
+          <div className="flex flex-col justify-center items-center w-full h-full  pt-6 ">
+          <div className="w-full h-full ">
               <Image
-                src="/images/RECEPÇÃO.png"
+                src="/images/missao1.png"
+                alt="Recepção OTicket"
+                width={420}
+                height={420}
+                className="object-cover w-full h-full  "
+              />
+            </div>
+            <div className="w-full h-full">
+              <Image
+                src="/images/missao2.png"
                 alt="Recepção OTicket"
                 width={420}
                 height={420}
@@ -118,7 +127,47 @@ export default function Mission() {
               />
             </div>
           </div>
+            <div className="w-full h-full">
+              <Image
+                src="/images/missao3.png"
+                alt="Recepção OTicket"
+                width={420}
+                height={420}
+                className="object-cover w-auto mt-1/2 translate-y-1/2 -ml-16 "
+              />
+            </div>
+          </div>
+          <div className="bg-white w-20 h-20 rounded-full absolute -left-10 top-[15%] flex justify-center  items-center p-2 shrink-0">
+            <Image
+              src="/images/logo_icon_black.png"
+              alt="Logo OTicket"
+              width={150}
+              height={150}
+              className="object-cover w-full h-full  flex justify-center items-center ml-4"
+            />
+          </div>
+          <div className="bg-white w-20 h-20 rounded-full absolute -left-10 top-[45%] flex justify-center  items-center p-2 shrink-0">
+            <Image
+              src="/images/logo_icon_black.png"
+              alt="Logo OTicket"
+              width={150}
+              height={150}
+              className="object-cover w-full h-full  flex justify-center items-center ml-4"
+            />
+          </div>
+          <div className="bg-white w-20 h-20 rounded-full absolute -left-10 top-[75%] flex justify-center  items-center p-2 shrink-0">
+            <Image
+              src="/images/logo_icon_black.png"
+              alt="Logo OTicket"
+              width={150}
+              height={150}
+              className="object-cover w-full h-full  flex justify-center items-center ml-4"
+            />
+          </div>
         </motion.div>
+
+     
+     
       </motion.div>
     </section>
   );

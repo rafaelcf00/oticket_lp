@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { fadeInUp, viewportOnce } from "../utils/animations";
 import Button from "./Button";
 
-export default function ContactCTA({ imgSrc = "/images/NOTEBOOK.png" }: { imgSrc?: string }) {
+export default function ContactCTA({ imgSrc = "/images/foto_palco.png" }: { imgSrc?: string }) {
   return (
     <section className="py-12 md:py-20 bg-white overflow-hidden">
-      <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+      <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 md:gap-16 items-center">
         <motion.div
           className="w-full md:max-w-xl text-center md:text-left "
           initial="hidden"
@@ -51,8 +51,8 @@ export default function ContactCTA({ imgSrc = "/images/NOTEBOOK.png" }: { imgSrc
           viewport={viewportOnce}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <div className="w-full max-w-[280px] sm:max-w-[300px] md:max-w-[420px] rounded-2xl ">
-            <Image src={imgSrc} alt="laptop" width={420} height={320} className="object-cover w-full h-full" />
+          <div className="w-full  rounded-2xl ">
+            <Image src={imgSrc} alt="laptop" width={420} height={320} className="object-cover w-full h-full rounded-3xl" />
           </div>
 
         

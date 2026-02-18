@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, viewportOnce } from "../utils/animations";
 
-export default function Numbers({ imgSrc = "/images/image_numbers.jpeg" }: { imgSrc?: string }) {
+export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?: string }) {
   return (
     <section className="relative flex flex-col lg:flex-row min-h-0 lg:min-h-[600px]" id="nossos-numeros">
       {/* Conteúdo à esquerda - fundo branco; em mobile ocupa toda a largura */}
@@ -80,7 +80,7 @@ export default function Numbers({ imgSrc = "/images/image_numbers.jpeg" }: { img
         viewport={viewportOnce}
         transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
-        <div className="relative w-[280px] xl:w-[340px] h-[360px] xl:h-[460px] aspect-square -ml-[200px] xl:-ml-[260px]">
+        <div className="relative w-[280px] xl:w-[440px] h-[360px] xl:h-[460px] aspect-square -ml-[200px] xl:-ml-[260px]">
           {/* Otti “escalando” a imagem – rotacionado, em cima à esquerda */}
           <div
             className="absolute -top-4 left-2 md:-left-[74px] z-20 w-32 h-32 md:w-32 md:h-32"

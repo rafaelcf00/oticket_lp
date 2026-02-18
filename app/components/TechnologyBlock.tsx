@@ -15,13 +15,13 @@ export default function TechnologyBlock() {
         viewport={viewportOnce}
         variants={fadeInUp}
       >
-        <div className="absolute top-0 right-0 md:-right-16 z-10 md:w-[180px] md:h-[180px] opacity-80 md:opacity-100">
+        <div className="absolute top-0 right-0 md:-right-24 z-10 md:w-[250px] md:h-[250px] opacity-80 md:opacity-100">
           <Image src="/images/ottisubindo.png" alt="Oticket Tecnologia" width={180} height={180} className="object-contain w-full h-full" />
         </div>
         <div className="max-w-2xl text-center md:text-left">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#023324] uppercase max-w-lg font-bold">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#023324] uppercase max-w-lg ">
             A tecnologia QUE sustenta mais DE <span className="font-extrabold">10 mil eventos</span> pelo Brasil
-          </h2>
+          </p>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#023324]/90 mt-2 sm:mt-3">
             Robusta, escalável, integrada à AWS, segura e criada para eventos de alto volume.
           </p>

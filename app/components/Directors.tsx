@@ -37,13 +37,13 @@ export default function Directors() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-center text-center shrink-0"
             >
               <motion.div
-                className="relative rounded-2xl  p-2 md:p-3 w-full "
+                className="relative rounded-2xl  p-2 md:p-3  "
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
-                <Image src={d.img} alt={d.name} width={260} height={260} className="object-cover rounded-xl w-full " />
+                <Image src={d.img} alt={d.name} width={260} height={260} className="object-contain rounded-xl w-[400px] h-[400px] " />
               </motion.div>
             </motion.div>
           ))}

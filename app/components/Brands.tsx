@@ -2,21 +2,43 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainerFast, viewportOnce } from "../utils/animations";
+import { viewportOnce } from "../utils/animations";
+
+const logos = [
+  "/images/marcas/SANTO GOLE.png",
+  "/images/marcas/VIRA COPOS.png",
+  "/images/marcas/carnavalsurreal.png",
+  "/images/marcas/festivalgastron.png",
+  "/images/marcas/rodeioolimpia.png",
+  "/images/marcas/HOSPITAL DE AMOR.png",
+  "/images/marcas/TED.png",
+  "/images/marcas/HALLEL.png",
+  "/images/marcas/TOATOA.png",
+  "/images/marcas/AMAZON SOUL.png",
+];
+
+function LogoSet() {
+  return (
+    <div className="flex shrink-0 items-center justify-center gap-8 sm:gap-12 md:gap-16 lg:gap-12 px-4">
+      {logos.map((src, i) => (
+        <div
+          key={i}
+          className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shrink-0"
+        >
+          <Image
+            src={src}
+            alt={`marca-${i}`}
+            width={200}
+            height={200}
+            className="object-contain w-full h-full opacity-90 hover:opacity-100 transition-opacity"
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function Brands() {
-  const logos = [
-    "/images/marcas/SANTO GOLE.png",
-    "/images/marcas/VIRA COPOS.png",
-
-    "/images/marcas/HOSPITAL DE AMOR.png",
-    "/images/marcas/TATU BOLA.png",
-    "/images/marcas/TED.png",
-    "/images/marcas/HALLEL.png",
-    "/images/marcas/TOATOA.png",
-    "/images/marcas/AMAZON SOUL.png",
-  ];
-
   return (
     <section className="py-12 md:py-16 bg-white overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
@@ -30,23 +52,24 @@ export default function Brands() {
           MARCAS QUE CONFIAM NO NOSSO TRABALHO
         </motion.h3>
 
-        <div className="relative bg-white rounded-2xl md:rounded-full overflow-hidden w-full">
+        <div className="relative w-full overflow-hidden">
+          {/* Gradiente esquerda: branco → transparente */}
+          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-linear-to-r from-white to-transparent z-10 pointer-events-none" />
+
           <motion.div
-            className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-8 items-center justify-items-center gap-2 sm:gap-4"
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
-            variants={staggerContainerFast}
+            className="flex w-max"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 20,
+                ease: "linear",
+              },
+            }}
           >
-            {logos.map((src, i) => (
-              <motion.div
-                key={i}
-                variants={fadeInUp}
-                className="flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 p-1 sm:p-2"
-              >
-                <Image src={src} alt={`marca-${i}`} width={160} height={160} className="object-contain w-full h-full" />
-              </motion.div>
-            ))}
+            <LogoSet />
+            <LogoSet />
           </motion.div>
         </div>
       </div>

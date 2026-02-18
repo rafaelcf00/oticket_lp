@@ -3,13 +3,14 @@
 import { motion } from "framer-motion";
 import { fadeInUp, viewportOnce } from "../utils/animations";
 import Button from "./Button";
+import Image from "next/image";
 
-export default function Strategic({ imgSrc = "/images/strategic.png" }: { imgSrc?: string }) {
+export default function Strategic({ imgSrc = "/images/mockupdash.png" }: { imgSrc?: string }) {
   return (
-    <section className="py-16 md:py-20 lg:py-28 bg-[#023324] text-white overflow-hidden">
-      <div className="px-4 sm:px-6 md:px-12 lg:px-16 xl:px-32 flex flex-col lg:flex-row justify-between gap-8 md:gap-12 lg:gap-16 items-center">
+    <section className=" bg-[#023324] text-white overflow-hidden">
+      <div className="pl-4 sm:pl-6 md:pl-12 lg:pl-16 xl:pl-32 flex flex-col lg:flex-row justify-between gap-8 md:gap-12 lg:gap-2 items-center">
         <motion.div
-          className="flex flex-col justify-center max-w-2xl w-full text-center lg:text-left"
+          className="flex flex-col justify-center max-w-2xl w-full text-center lg:text-left "
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
@@ -36,12 +37,14 @@ export default function Strategic({ imgSrc = "/images/strategic.png" }: { imgSrc
         </motion.div>
 
         <motion.div
-          className="w-full h-full min-h-[200px] flex items-center justify-center"
+          className="w-full h-full  "
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-        />
+        >
+          <Image src="/images/mockupdash.png" alt="Recepção OTicket" width={1920} height={1080} className="object-cover w-full h-[700px]" />
+        </motion.div>
       </div>
     </section>
   );

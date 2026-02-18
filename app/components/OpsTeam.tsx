@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainerFast, viewportOnce } from "../utils/animations";
+import { fadeInUp, fadeInLeft, fadeInRight, staggerContainerFast, viewportOnce } from "../utils/animations";
 import Button from "./Button";
 
 const team = [
@@ -43,32 +43,51 @@ export default function OpsTeam() {
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Image src={m.img} alt={m.name} width={260} height={260} className="object-cover rounded-xl w-full h-full" />
+                    <Image src={m.img} alt={m.name} width={260} height={260} className="" />
                   </motion.div>
                   {/* <div className="mt-3 font-semibold text-sm">{m.name}</div> */}
                 </motion.div>
               ))}
             </motion.div>
 
-            <div className="mt-10 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
-              <div className=" text-center shrink-0 relative">
+            <motion.div
+              className="mt-10 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8"
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
+            >
+              <motion.div
+                variants={fadeInLeft}
+                transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="text-center shrink-0 relative"
+              >
                 <div className="relative rounded-2xl p-2">
                   <div className="absolute top-0 -right-8 sm:-right-12 md:-right-21 z-10">
                     <Image src="/images/ottidescendo.png" alt="Oticket Tecnologia" width={100} height={100} className="object-contain w-12 h-12 sm:w-16 sm:h-16 md:w-36 md:h-36" />
                   </div>
-                  <Image src={"/images/comerciais/evandro.png"} alt="Evandro Motta" width={260} height={260} className="object-cover rounded-xl w-full " />
+                  <Image src={"/images/comerciais/evandro.png"} alt="Evandro Motta" width={260} height={260} className=" " />
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex-1 text-center md:text-left max-w-2xl mt-4 md:mt-6 md:ml-12 lg:ml-24 px-2 sm:px-0">
+              <motion.div
+                variants={fadeInRight}
+                transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="flex-1 text-center md:text-left max-w-2xl mt-4 md:mt-6 md:ml-12 lg:ml-24 px-2 sm:px-0"
+              >
                 <p className="text-white/90 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Produtores de alto nível não precisam de um call center. Precisam de um ponto focal que entenda a estratégia, o set-up e a complexidade de cada operação.</p>
-                <div className="mt-6 flex justify-center md:justify-start">
+                <motion.div
+                  className="mt-6 flex justify-center md:justify-start"
+                  initial={{ opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={viewportOnce}
+                  transition={{ duration: 0.4, delay: 0.3 }}
+                >
                   <Button href="#contato" variant="dark" size="md">
-                    FALE COM UM COMERCIAL
+                    FALE COM NOSSO TIME
                   </Button>
-                </div>
-              </div>
-            </div>
+                </motion.div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>
