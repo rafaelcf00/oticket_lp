@@ -43,7 +43,7 @@ export default function OpsTeam() {
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Image src={m.img} alt={m.name} width={260} height={260} className="" />
+                    <Image src={m.img} alt={m.name} width={260} height={260} className="w-[140px] sm:w-[180px] md:w-[200px] lg:w-[260px] h-auto" />
                   </motion.div>
                   {/* <div className="mt-3 font-semibold text-sm">{m.name}</div> */}
                 </motion.div>
@@ -65,7 +65,7 @@ export default function OpsTeam() {
                   <div className="absolute top-0 -right-8 sm:-right-12 md:-right-21 z-10">
                     <Image src="/images/ottidescendo.png" alt="Oticket Tecnologia" width={100} height={100} className="object-contain w-12 h-12 sm:w-16 sm:h-16 md:w-36 md:h-36" />
                   </div>
-                  <Image src={"/images/comerciais/evandro.png"} alt="Evandro Motta" width={260} height={260} className=" " />
+                  <Image src={"/images/comerciais/evandro.png"} alt="Evandro Motta" width={260} height={260} className="w-[160px] sm:w-[200px] md:w-[260px] h-auto" />
                 </div>
               </motion.div>
 

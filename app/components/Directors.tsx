@@ -43,7 +43,7 @@ export default function Directors() {
                 className="relative rounded-2xl  p-2 md:p-3  "
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
-                <Image src={d.img} alt={d.name} width={260} height={260} className="object-contain rounded-xl w-[400px] h-[400px] " />
+                <Image src={d.img} alt={d.name} width={260} height={260} className="object-contain rounded-xl w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[260px] md:h-[260px] lg:w-[400px] lg:h-[400px]" />
               </motion.div>
             </motion.div>
           ))}

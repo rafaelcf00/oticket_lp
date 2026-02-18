@@ -8,9 +8,9 @@ import Image from "next/image";
 export default function Strategic({ imgSrc = "/images/mockupdash.png" }: { imgSrc?: string }) {
   return (
     <section className=" bg-[#023324] text-white overflow-hidden">
-      <div className="pl-4 sm:pl-6 md:pl-12 lg:pl-16 xl:pl-32 flex flex-col lg:flex-row justify-between gap-8 md:gap-12 lg:gap-2 items-center">
+      <div className="px-4 sm:px-6 md:px-12 lg:pl-16 xl:pl-32 lg:pr-0 flex flex-col lg:flex-row justify-between gap-8 md:gap-12 lg:gap-2 items-center">
         <motion.div
-          className="flex flex-col justify-center max-w-2xl w-full text-center lg:text-left "
+          className="flex flex-col justify-center max-w-2xl w-full text-center lg:text-left py-8 lg:py-12"
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
@@ -43,7 +43,7 @@ export default function Strategic({ imgSrc = "/images/mockupdash.png" }: { imgSr
           viewport={viewportOnce}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <Image src="/images/mockupdash.png" alt="Recepção OTicket" width={1920} height={1080} className="object-cover w-full h-[700px]" />
+          <Image src="/images/mockupdash.png" alt="Recepção OTicket" width={1920} height={1080} className="object-cover w-full h-[220px] sm:h-[300px] md:h-[420px] lg:h-[700px]" />
         </motion.div>
       </div>
     </section>

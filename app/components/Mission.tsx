@@ -90,84 +90,71 @@ export default function Mission() {
           </motion.div>
         </motion.div>
 
+        {/* Coluna verde — apenas em md+ */}
         <motion.div
           variants={fadeInUp}
-          className="relative bg-[#023324] w-full h-full "
+          className="relative bg-[#023324] w-full h-full hidden md:block"
         >
-          {/* <div className="absolute left-0 top-8 -translate-x-1/2 flex flex-col items-center gap-12 z-10">
-            <div className="w-10 h-10 bg-white rounded-full border-2 border-[#023324] flex items-center justify-center">
-              <div className="w-5 h-5 bg-[#023324] rounded-full" />
+          <div className="flex w-full h-full mx-4 md:mx-8 lg:mx-16">
+            <div className="flex flex-col justify-center items-center w-full h-full pt-6">
+              <div className="w-full h-full">
+                <Image
+                  src="/images/missao1.png"
+                  alt="Recepção OTicket"
+                  width={420}
+                  height={420}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="w-full h-full">
+                <Image
+                  src="/images/missao2.png"
+                  alt="Recepção OTicket"
+                  width={420}
+                  height={420}
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
-            <div className="w-10 h-10 bg-white rounded-full border-2 border-[#023324] flex items-center justify-center">
-              <div className="w-5 h-5 bg-[#023324] rounded-full" />
-            </div>
-            <div className="w-10 h-10 bg-white rounded-full border-2 border-[#023324] flex items-center justify-center">
-              <div className="w-5 h-5 bg-[#023324] rounded-full" />
-            </div>
-          </div> */}
-
-          <div className="flex w-full h-full  mx-16">
-          <div className="flex flex-col justify-center items-center w-full h-full  pt-6 ">
-          <div className="w-full h-full ">
-              <Image
-                src="/images/missao1.png"
-                alt="Recepção OTicket"
-                width={420}
-                height={420}
-                className="object-cover w-full h-full  "
-              />
-            </div>
-            <div className="w-full h-full">
-              <Image
-                src="/images/missao2.png"
-                alt="Recepção OTicket"
-                width={420}
-                height={420}
-                className="object-cover w-full h-full "
-              />
-            </div>
-          </div>
             <div className="w-full h-full">
               <Image
                 src="/images/missao3.png"
                 alt="Recepção OTicket"
                 width={420}
                 height={420}
-                className="object-cover w-auto mt-1/2 translate-y-1/2 -ml-16 "
+                className="object-cover w-auto mt-1/2 translate-y-1/2 -ml-16"
               />
             </div>
           </div>
-          <div className="bg-white w-20 h-20 rounded-full absolute -left-10 top-[15%] flex justify-center  items-center p-2 shrink-0">
+          <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full absolute -left-8 md:-left-10 top-[15%] flex justify-center items-center p-2 shrink-0">
             <Image
               src="/images/logo_icon_black.png"
               alt="Logo OTicket"
               width={150}
               height={150}
-              className="object-cover w-full h-full  flex justify-center items-center ml-4"
+              className="object-cover w-full h-full flex justify-center items-center ml-4"
             />
           </div>
-          <div className="bg-white w-20 h-20 rounded-full absolute -left-10 top-[45%] flex justify-center  items-center p-2 shrink-0">
+          <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full absolute -left-8 md:-left-10 top-[45%] flex justify-center items-center p-2 shrink-0">
             <Image
               src="/images/logo_icon_black.png"
               alt="Logo OTicket"
               width={150}
               height={150}
-              className="object-cover w-full h-full  flex justify-center items-center ml-4"
+              className="object-cover w-full h-full flex justify-center items-center ml-4"
             />
           </div>
-          <div className="bg-white w-20 h-20 rounded-full absolute -left-10 top-[75%] flex justify-center  items-center p-2 shrink-0">
+          <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full absolute -left-8 md:-left-10 top-[75%] flex justify-center items-center p-2 shrink-0">
             <Image
               src="/images/logo_icon_black.png"
               alt="Logo OTicket"
               width={150}
               height={150}
-              className="object-cover w-full h-full  flex justify-center items-center ml-4"
+              className="object-cover w-full h-full flex justify-center items-center ml-4"
             />
           </div>
         </motion.div>
 
-     
-     
       </motion.div>
     </section>
   );

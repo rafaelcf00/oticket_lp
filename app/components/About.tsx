@@ -40,7 +40,7 @@ export default function About() {
             </div>
             {/* Otti subindo na parte direita do vídeo (rotacionado, “escalando”) */}
             <div
-              className="absolute -right-18 top-[40%] z-10 w-20 h-20 md:w-24 md:h-24"
+              className="absolute right-0 md:-right-18 top-[40%] z-10 w-16 h-16 md:w-24 md:h-24 hidden sm:block"
             >
               <Image
                 src="/images/ottidescendo.png"
