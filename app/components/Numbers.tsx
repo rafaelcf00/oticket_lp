@@ -28,7 +28,7 @@ export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?
                   <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+3.000.000 Tickets Vendidos</div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+7 milhões de tickets vendidos</div>
                 </div>
               </motion.li>
 
@@ -37,7 +37,7 @@ export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?
                   <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+1.500 Produtores Parceiros</div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+10 mil eventos entregues</div>
                 </div>
               </motion.li>
 
@@ -46,7 +46,7 @@ export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?
                   <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+250 Cidades Atendidas</div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+500 mil contas criadas</div>
                 </div>
               </motion.li>
 
@@ -55,7 +55,7 @@ export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?
                   <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+10.000 Eventos Entregues</div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+260 cidades atendidas</div>
                 </div>
               </motion.li>
 
@@ -64,7 +64,7 @@ export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?
                   <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+500.000 Contas Criadas</div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+2 mil produtores ativos</div>
                 </div>
               </motion.li>
             </ul>
