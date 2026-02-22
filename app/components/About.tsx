@@ -7,7 +7,7 @@ import { fadeInUp, viewportOnce } from "../utils/animations";
 
 export default function About() {
   return (
-    <section id="sobre" className="py-12 md:py-20 bg-white">
+    <section id="sobre" className="py-4 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
         <motion.div
           initial="hidden"
@@ -15,9 +15,9 @@ export default function About() {
           viewport={viewportOnce}
           variants={fadeInUp}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#023324] mb-4 md:mb-6 font-bold">SOBRE NÓS</h2>
+          <h2 className="text-3xl md:text-4xl text-[#023324] mb-4 md:mb-6 font-bold">SOBRE NÓS</h2>
 
-          <p className="text-[#023324]/95 max-w-lg leading-relaxed text-base md:text-lg">
+          <p className="text-[#023324]/95 max-w-lg leading-relaxed text-lg md:text-lg">
             A OTicket não é uma empresa de tecnologia que atende eventos. Nascemos da
             produção de eventos para criamos a solução que gostaríamos de ter. Nossa
             plataforma foi pensada para que a sua única preocupação seja a arte de produzir.

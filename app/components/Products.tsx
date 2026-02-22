@@ -9,13 +9,13 @@ export default function Products() {
   return (
     <section
       id="produtos"
-      className="py-12 md:py-20 bg-[#023324] text-white overflow-hidden"
+      className="py-12 pb-0 lg:pb-12 md:py-20 bg-[#023324] text-white overflow-hidden"
     >
       <div className="px-4 sm:px-6 md:px-12 lg:mx-64 lg:px-6">
 
         {/* TÍTULO */}
         <motion.h2
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+          className="text-3xl  md:text-4xl lg:text-5xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
@@ -38,7 +38,7 @@ export default function Products() {
           {/* TEXTO */}
           <motion.div variants={fadeInLeft} className="flex flex-col gap-y-4 w-full">
             <div>
-              <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
+              <h1 className="text-white text-2xl lg:text-4xl font-bold mb-3">
                 GESTÃO DE BAR 360°
               </h1>
 
@@ -130,11 +130,11 @@ export default function Products() {
           {/* TEXTO */}
           <motion.div variants={fadeInRight} className="flex flex-col gap-y-4 w-full">
             <div>
-              <h1 className="text-white text-lg sm:text-xl lg:text-2xl mb-2">
+              <h1 className="text-white text-xl lg:text-2xl mb-2">
                 TICKETS PRESENCIAL
               </h1>
 
-              <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
+              <h1 className="text-white text-2xl lg:text-4xl font-bold mb-3">
                 PONTO DE VENDA E APP
               </h1>
 

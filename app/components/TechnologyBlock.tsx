@@ -16,21 +16,21 @@ export default function TechnologyBlock() {
         variants={fadeInUp}
       >
         <div className="absolute top-0 right-0 md:-right-24 z-10 md:w-[250px] md:h-[250px] opacity-80 md:opacity-100">
-          <Image src="/images/ottisubindo.png" alt="Oticket Tecnologia" width={180} height={180} className="object-contain w-full h-full" />
+          <Image src="/images/ottisubindo.png" alt="Oticket Tecnologia" width={180} height={180} className="object-contain w-full h-full hidden lg:block" />
         </div>
         <div className="max-w-2xl text-center md:text-left">
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#023324] uppercase max-w-lg ">
+          <p className="text-3xl lg:text-4xl text-[#023324] uppercase max-w-lg ">
             A tecnologia QUE sustenta mais DE <span className="font-extrabold">10 mil eventos</span> pelo Brasil
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#023324]/90 mt-2 sm:mt-3">
+          <p className="text-base md:text-lg lg:text-xl text-[#023324]/90 mt-2 sm:mt-3">
             Robusta, escalável, integrada à AWS, segura e criada para eventos de alto volume.
           </p>
         </div>
         <div className="text-center md:text-left">
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#023324]/90 max-w-md">
+          <p className="text-base md:text-lg lg:text-xl text-[#023324]/90 max-w-md">
             A OTicket não é apenas uma ticketeira. É o motor da sua operação.
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#023324]/90 max-w-md mt-2 sm:mt-3">
+          <p className="text-base md:text-lg lg:text-xl text-[#023324]/90 max-w-md mt-2 sm:mt-3">
             Do online ao presencial, da entrada ao consumo, da venda ao repasse.
           </p>
         </div>

@@ -23,7 +23,7 @@ function LogoSet() {
       {logos.map((src, i) => (
         <div
           key={i}
-          className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 shrink-0"
+          className="flex items-center justify-center w-24 h-24  md:w-24 md:h-24 lg:w-32 lg:h-32 shrink-0"
         >
           <Image
             src={src}
@@ -40,10 +40,10 @@ function LogoSet() {
 
 export default function Brands() {
   return (
-    <section className="py-12 md:py-16 bg-white overflow-hidden">
+    <section className="py-2 md:py-16 bg-white overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
         <motion.h3
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#023324] mb-6 md:mb-8 font-bold text-center md:text-left"
+          className="text-3xl lg:text-4xl text-[#023324] mb-6 md:mb-8 font-bold text-left"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}

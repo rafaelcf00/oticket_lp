@@ -21,7 +21,7 @@ export default function HeroPage() {
 
   return (
     <div
-      className="relative min-h-screen bg-center bg-cover flex justify-center"
+      className="relative lg:min-h-screen bg-center bg-cover flex justify-center"
       style={{
         backgroundImage: "url('/images/BANNER%20FULL.png')",
       }}
@@ -144,13 +144,13 @@ export default function HeroPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-white text-3xl  md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
             SOLIDEZ DE MERCADO,
             <br />
             VISÃO DE QUEM PRODUZ.
           </h1>
           <motion.p
-            className="mt-6 text-white/90 text-xl max-w-2xl mx-auto"
+            className="mt-6 text-white/90 text-lg lg:text-xl max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}

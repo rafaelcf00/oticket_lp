@@ -7,7 +7,7 @@ import Button from "./Button";
 
 export default function ContactCTA({ imgSrc = "/images/foto_palco.png" }: { imgSrc?: string }) {
   return (
-    <section className="py-12 md:py-20 bg-white overflow-hidden">
+    <section className="py-6 md:py-20 bg-white overflow-hidden">
       <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 md:gap-16 items-center">
         <motion.div
           className="w-full md:max-w-xl text-center md:text-left "
@@ -16,7 +16,7 @@ export default function ContactCTA({ imgSrc = "/images/foto_palco.png" }: { imgS
           viewport={viewportOnce}
           variants={fadeInUp}
         >
-          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#023324] font-bold mb-4 md:mb-6">OTICKET ENTREGA PRESENÇA, PROXIMIDADE E PARCERIA REAL.</h3>
+          <h3 className="text-2xl lg:text-4xl text-[#023324] font-bold mb-4 md:mb-6">OTICKET ENTREGA PRESENÇA, PROXIMIDADE E PARCERIA REAL.</h3>
 
           <ul className="space-y-2 sm:space-y-3 md:space-y-4 text-[#023324]/90 list-none text-sm sm:text-base md:text-lg lg:text-xl">
             <li className="flex items-start gap-3">

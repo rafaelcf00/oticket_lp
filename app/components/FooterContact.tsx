@@ -48,9 +48,9 @@ export default function FooterContact() {
           <h4 className="font-bold text-xl sm:text-2xl mb-4">
             FAÇA O DOWNLOAD DO NOSSO APLICATIVO!
           </h4>
-          <div className="flex flex-wrap  gap-x-4  ">
-              <Image src="/images/APPLESTORE.png" alt="App Store" width={200} height={200} className="w-1/4  " />
-              <Image src="/images/GOOGLEPLAY.png" alt="App Store" width={200} height={200} className="w-1/4  " />
+          <div className="flex lg:flex-wrap  gap-x-4    ">
+              <Image src="/images/APPLESTORE.png" alt="App Store" width={200} height={200} className="lg:w-1/4 w-1/3   " />
+              <Image src="/images/GOOGLEPLAY.png" alt="App Store" width={200} height={200} className="lg:w-1/4 w-1/3 " />
           </div>
         </motion.div>
 

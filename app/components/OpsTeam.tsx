@@ -18,7 +18,7 @@ export default function OpsTeam() {
     <section className="py-12 md:py-20 bg-[#023324] text-white overflow-hidden">
       <div className="px-4 sm:px-6 md:px-12 lg:px-16 xl:px-32 ">
         <motion.h3
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 sm:mb-6 text-center md:text-left max-w-5xl font-bold"
+          className="text-3xl lg:text-4xl xl:text-5xl mb-4 sm:mb-6 text-center md:text-left max-w-5xl font-bold"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
@@ -43,7 +43,7 @@ export default function OpsTeam() {
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Image src={m.img} alt={m.name} width={260} height={260} className="w-[140px] sm:w-[180px] md:w-[200px] lg:w-[260px] h-auto" />
+                    <Image src={m.img} alt={m.name} width={260} height={260} className="w-[150px]   lg:w-[260px] h-auto" />
                   </motion.div>
                   {/* <div className="mt-3 font-semibold text-sm">{m.name}</div> */}
                 </motion.div>
@@ -63,18 +63,18 @@ export default function OpsTeam() {
               >
                 <div className="relative rounded-2xl p-2">
                   <div className="absolute top-0 -right-8 sm:-right-12 md:-right-21 z-10">
-                    <Image src="/images/ottidescendo.png" alt="Oticket Tecnologia" width={100} height={100} className="object-contain w-12 h-12 sm:w-16 sm:h-16 md:w-36 md:h-36" />
+                    <Image src="/images/ottidescendo.png" alt="Oticket Tecnologia" width={100} height={100} className="object-contain w-12 h-12 sm:w-16 sm:h-16 md:w-36 md:h-36 hidden lg:block" />
                   </div>
-                  <Image src={"/images/comerciais/evandro.png"} alt="Evandro Motta" width={260} height={260} className="w-[160px] sm:w-[200px] md:w-[260px] h-auto" />
+                  <Image src={"/images/comerciais/evandro.png"} alt="Evandro Motta" width={260} height={260} className="w-[150px] md:w-[260px] h-auto" />
                 </div>
               </motion.div>
 
               <motion.div
                 variants={fadeInRight}
                 transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="flex-1 text-center md:text-left max-w-2xl mt-4 md:mt-6 md:ml-12 lg:ml-24 px-2 sm:px-0"
+                className="flex-1 text-center md:text-left max-w-2xl mt-0 md:mt-6 md:ml-12 lg:ml-24 px-2 sm:px-0"
               >
-                <p className="text-white/90 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Produtores de alto nível não precisam de um call center. Precisam de um ponto focal que entenda a estratégia, o set-up e a complexidade de cada operação.</p>
+                <p className="text-white/90 text-base md:text-lg lg:text-xl xl:text-2xl">Produtores de alto nível não precisam de um call center. Precisam de um ponto focal que entenda a estratégia, o set-up e a complexidade de cada operação.</p>
                 <motion.div
                   className="mt-6 flex justify-center md:justify-start"
                   initial={{ opacity: 0, y: 12 }}

@@ -16,7 +16,7 @@ export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?
           viewport={viewportOnce}
           variants={staggerContainer}
         >
-          <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl md:text-4xl text-[#023324] mb-6 md:mb-8 font-bold">NOSSOS NÚMEROS</motion.h2>
+          <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl text-[#023324] mb-6 md:mb-8 font-bold">NOSSOS NÚMEROS</motion.h2>
 
           <div className="relative ">
             {/* Linha centralizada no meio das bolinhas: pl-8 (32px) + metade do círculo (20px) - metade da linha (1px) = 51px */}
@@ -25,46 +25,46 @@ export default function Numbers({ imgSrc = "/images/gestao360.webp" }: { imgSrc?
             <ul className="space-y-8">
               <motion.li variants={fadeInUp} className="flex items-start gap-3 sm:gap-4 min-w-0">
                 <div className="shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#023324] text-white flex items-center justify-center">
-                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
+                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] lg:w-full lg:h-full w-8 h-8 " />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+7 milhões de tickets vendidos</div>
+                  <div className=" text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+7 milhões de tickets vendidos</div>
                 </div>
               </motion.li>
 
               <motion.li variants={fadeInUp} className="flex items-start gap-3 sm:gap-4 min-w-0">
                 <div className="shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#023324] text-white flex items-center justify-center">
-                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
+                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] lg:w-full lg:h-full w-8 h-8" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+10 mil eventos entregues</div>
+                  <div className=" text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+10 mil eventos entregues</div>
                 </div>
               </motion.li>
 
               <motion.li variants={fadeInUp} className="flex items-start gap-3 sm:gap-4 min-w-0">
                 <div className="shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#023324] text-white flex items-center justify-center">
-                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
+                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] lg:w-full lg:h-full w-8 h-8" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+500 mil contas criadas</div>
+                  <div className=" text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+500 mil contas criadas</div>
                 </div>
               </motion.li>
 
               <motion.li variants={fadeInUp} className="flex items-start gap-3 sm:gap-4 min-w-0">
                 <div className="shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#023324] text-white flex items-center justify-center">
-                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
+                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] lg:w-full lg:h-full w-8 h-8" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+260 cidades atendidas</div>
+                  <div className=" text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+260 cidades atendidas</div>
                 </div>
               </motion.li>
 
               <motion.li variants={fadeInUp} className="flex items-start gap-3 sm:gap-4 min-w-0">
                 <div className="shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#023324] text-white flex items-center justify-center">
-                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] w-5 h-5 sm:w-full sm:h-full" />
+                  <Image src="/images/otti_white.png" alt="plus" width={40} height={40} className="object-contain z-[9999] lg:w-full lg:h-full w-8 h-8" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+2 mil produtores ativos</div>
+                  <div className=" text-lg md:text-xl lg:text-2xl font-semibold text-[#023324]">+2 mil produtores ativos</div>
                 </div>
               </motion.li>
             </ul>

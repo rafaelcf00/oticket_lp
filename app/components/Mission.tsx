@@ -8,7 +8,7 @@ export default function Mission() {
   return (
     <section className="bg-white overflow-hidden">
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start pl-4 sm:pl-6 md:pl-12 lg:pl-24 xl:pl-32 py-8 md:py-0"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start pl-4 sm:pl-6 md:pl-12 lg:pl-24 xl:pl-32 py-4 md:py-0"
         initial="hidden"
         whileInView="visible"
         viewport={viewportOnce}
@@ -18,7 +18,7 @@ export default function Mission() {
           {/* NOSSA MISSÃO */}
           <motion.div variants={fadeInUp} className="flex flex-col items-start">
             <div className="flex items-center">
-            <div className="shrink-0 mt-1 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 flex items-center justify-center overflow-hidden">
+            <div className="shrink-0 mt-1 w-24 h-24  md:w-24 md:h-24 lg:w-32 lg:h-32 flex items-center justify-center overflow-hidden">
               <Image
                 src="/images/MISSÃO.png"
                 alt=""
@@ -29,11 +29,11 @@ export default function Mission() {
 
             </div>
             <div>
-            <h4 className="text-xl sm:text-2xl text-[#023324] mb-2 md:mb-3 font-bold">NOSSA MISSÃO</h4>
+            <h4 className="text-3xl sm:text-2xl text-[#023324] mb-2 md:mb-3 font-bold">NOSSA MISSÃO</h4>
             </div>
             </div>
             <div className="-mt-4">
-              <p className="text-[#023324]/95 leading-relaxed max-w-md text-sm sm:text-base md:text-lg ml-4 md:ml-6">
+              <p className="text-[#023324]/95 leading-relaxed max-w-md text-base md:text-lg ml-4 md:ml-6">
               Ser o parceiro confiável dos produtores de eventos, com soluções completas e inovadoras, dados confiáveis e foco em uma experiência excepcional do início ao fim.
               </p>
               <div className="mt-4 ml-4 md:ml-6 w-48 md:w-64 h-0.5 bg-[#023324]" />
@@ -43,7 +43,7 @@ export default function Mission() {
           {/* NOSSA VISÃO */}
           <motion.div variants={fadeInUp} className="flex flex-col items-start">
             <div className="flex items-center">
-            <div className="shrink-0 mt-1 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 flex items-center justify-center overflow-hidden">
+            <div className="shrink-0 mt-1 w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32 flex items-center justify-center overflow-hidden">
               <Image
                 src="/images/VISÃO.png"
                 alt=""
@@ -54,11 +54,11 @@ export default function Mission() {
 
             </div>
             <div>
-            <h4 className="text-xl sm:text-2xl text-[#023324] mb-2 md:mb-3 font-bold">NOSSA VISÃO</h4>
+            <h4 className="text-3xl  text-[#023324] mb-2 md:mb-3 font-bold">NOSSA VISÃO</h4>
             </div>
             </div>
             <div className="-mt-4">
-              <p className="text-[#023324]/95 leading-relaxed max-w-md text-sm sm:text-base md:text-lg ml-4 md:ml-6">
+              <p className="text-[#023324]/95 leading-relaxed max-w-md text-base md:text-lg ml-4 md:ml-6">
               Ser reconhecida nacionalmente como a solução completa em gestão de eventos, com excelência no atendimento, inovação contínua e experiências memoráveis.
               </p>
               <div className="mt-4 ml-4 md:ml-6 w-48 md:w-64 h-0.5 bg-[#023324]" />
@@ -68,7 +68,7 @@ export default function Mission() {
           {/* NOSSOS VALORES */}
           <motion.div variants={fadeInUp} className="flex flex-col items-start">
             <div className="flex items-center">
-            <div className="shrink-0 mt-1 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 flex items-center justify-center overflow-hidden">
+            <div className="shrink-0 mt-1 w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32 flex items-center justify-center overflow-hidden">
               <Image
                 src="/images/VALORES.png"
                 alt=""
@@ -79,11 +79,11 @@ export default function Mission() {
 
             </div>
             <div>
-            <h4 className="text-xl sm:text-2xl text-[#023324] mb-2 md:mb-3 font-bold">NOSSOS VALORES</h4>
+            <h4 className="text-3xl  text-[#023324] mb-2 md:mb-3 font-bold">NOSSOS VALORES</h4>
             </div>
             </div>
             <div className="-mt-4">
-              <p className="text-[#023324]/95 leading-relaxed max-w-md text-sm sm:text-base md:text-lg ml-4 md:ml-6">
+              <p className="text-[#023324]/95 leading-relaxed max-w-md text-base md:text-lg ml-4 md:ml-6">
               Priorizar a satisfação do cliente com excelência no atendimento, qualidade, parceria, inovação constante e compromisso com o sucesso de cada evento.
               </p>
             </div>
