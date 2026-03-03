@@ -53,3 +53,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+
+/* Brand image helpers: smooth filter transition and invert for bright logos */
+.brand-img {
+  transition: filter .2s ease, opacity .2s ease;
+}
+
+.brand-img.invert {
+  filter: invert(1) drop-shadow(0 4px 10px rgba(0,0,0,0.12));
+}

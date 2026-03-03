@@ -1,9 +1,9 @@
 "use client";
 
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { viewportOnce } from "../utils/animations";
-
 const logos = [
   "/images/marcas/SANTO GOLE.png",
   "/images/marcas/VIRA COPOS.png",
@@ -17,7 +17,59 @@ const logos = [
   "/images/marcas/AMAZON SOUL.png",
 ];
 
+// detection moved inside LogoSet component so hooks can be used in component scope
 function LogoSet() {
+  useEffect(() => {
+    const imgs = Array.from(document.querySelectorAll<HTMLImageElement>(".brand-img"));
+    if (!imgs.length) return;
+
+    const analyze = (img: HTMLImageElement) => {
+      try {
+        const w = img.naturalWidth;
+        const h = img.naturalHeight;
+        if (!w || !h) return;
+
+        const maxDim = 100;
+        const cw = Math.min(w, maxDim);
+        const ch = Math.round((h / w) * cw) || cw;
+
+        const canvas = document.createElement("canvas");
+        canvas.width = cw;
+        canvas.height = ch;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) return;
+
+        ctx.drawImage(img, 0, 0, cw, ch);
+        const data = ctx.getImageData(0, 0, cw, ch).data;
+
+        let sum = 0;
+        let count = 0;
+        const step = 4 * 6; // sample every 6th pixel
+        for (let i = 0; i < data.length; i += step) {
+          const alpha = data[i + 3];
+          if (alpha < 16) continue;
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+          sum += lum;
+          count++;
+          if (count > 800) break;
+        }
+
+        const avg = count ? sum / count : 0;
+        if (avg > 240) img.classList.add("invert");
+      } catch (e) {
+        // ignore
+      }
+    };
+
+    imgs.forEach((img) => {
+      if (img.complete) analyze(img);
+      else img.addEventListener("load", () => analyze(img), { once: true });
+    });
+  }, []);
+
   return (
     <div className="flex shrink-0 items-center justify-center gap-8 sm:gap-12 md:gap-16 lg:gap-12 px-4">
       {logos.map((src, i) => (
@@ -30,7 +82,7 @@ function LogoSet() {
             alt={`marca-${i}`}
             width={200}
             height={200}
-            className="object-contain w-full h-full opacity-90 hover:opacity-100 transition-opacity"
+            className="brand-img object-contain w-full h-full opacity-90 hover:opacity-100 transition-opacity"
           />
         </div>
       ))}
