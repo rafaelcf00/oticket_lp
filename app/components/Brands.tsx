@@ -115,7 +115,7 @@ export default function Brands() {
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: 20,
+                duration: 40,
                 ease: "linear",
               },
             }}
